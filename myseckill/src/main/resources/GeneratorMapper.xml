@@ -31,7 +31,7 @@
         <!--生成 MyBatis的Mapper.xml文件，targetPackage 指定 mapper.xml文件的包名，targetProject 指定生成的 mapper.xml放在哪个工程下面
         -->
         <sqlMapGenerator targetPackage="mappers"
-                         targetProject="src/main/resource">
+                         targetProject="src/main/resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!--生成 MyBatis的 Mapper接口类文件,targetPackage 指定 Mapper 接口类的包名，targetProject 指定生成的 Mapper 接口放在eclipse 的哪个工程下面
@@ -42,13 +42,37 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!--数据库表名及对应的Java实体类名，有多少表，就写多少-->
-        <table tableName="user_info" domainObjectName="UserDO"
-               enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false"
-               enableSelectByExample="false"
-               selectByExampleQueryId="false"></table>
-        <table tableName="user_password" domainObjectName="userPasswordDO"
+<!--        <table tableName="user_info" domainObjectName="UserDO"-->
+<!--               enableCountByExample="false"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false"></table>-->
+<!--        <table tableName="user_password" domainObjectName="UserPasswordDO"-->
+<!--               enableCountByExample="false"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false" ></table>-->
+<!--        <table tableName="item_info" domainObjectName="ItemInfoDO"-->
+<!--               enableCountByExample="false"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false" ></table>-->
+<!--        <table tableName="item_stock" domainObjectName="ItemStockDO"-->
+<!--               enableCountByExample="false"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false" ></table>-->
+<!--        <table tableName="order_info" domainObjectName="OrderDO"-->
+<!--               enableCountByExample="false"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false" ></table>-->
+        <table tableName="promo" domainObjectName="PromoDO"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"
